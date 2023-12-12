@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --fc-primary: #fff;
+  --bg-primary: #fff;
+  --button-hover: #02799D;
+}
+
+body {
+  background-image: url(./assets/universe1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+body,
+nav,
+a {
+  font-family: "Roboto", sans-serif;
+}
+
+/* header */
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0 0 7.2rem;
+}
+
+ul {
+  display: flex;
+  gap: 5.4rem;
+  list-style: none;
+  padding-left: 4.3rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: var(--fc-primary);
+}
+
+
+/* home */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 26rem);
+  gap: 2.4rem;
+}
+
+.home h1 {
+  color: var(--fc-primary);
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+.home button {
+  border: 0.2rem solid var(--bg-primary);
+  border-radius: 0.5rem;
+  padding: 1.2rem 3.2rem;
+  background-color: transparent;
+  color: var(--fc-primary);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.home button:hover {
+  background-color: var(--bg-primary);
+  color: var(--button-hover);
+}
+
+/* Universo e Exploração */
+
+.universe {
+  margin-top: 6.3rem;
+  padding-left: 10.2rem;
+}
+
+.universe h1 {
+  font-size: 4.8rem;
+  color: var(--fc-primary);
+  font-weight: 700;
+}
+
+.universe p {
+  color: var(--fc-primary);
+  font-size: 1.8rem;
+  line-height: 160%;
+  margin-top: 2rem;
+}
